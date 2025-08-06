@@ -22,7 +22,7 @@ namespace CalculadoraWeb
         // Integrante 2
         // public static double Subtracao(double a, double b)
         // {
-        //     // Implementar aqui
+        //   return a - b;
         // }
 
         // Integrante 3
