@@ -34,6 +34,12 @@ namespace CalculadoraWeb
         // {
         //     // Implementar aqui
         // }
+
+        public static double Potencia(double a, double b)
+        {
+            return Math.Pow(a,b);
+        }
     }
 }
+
 
