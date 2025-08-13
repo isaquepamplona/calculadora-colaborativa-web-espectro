@@ -1,4 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
 using System;
 
 namespace CalculadoraWeb
@@ -7,38 +6,48 @@ namespace CalculadoraWeb
     {
         static void Main(string[] args)
         {
-            
             Console.WriteLine("Calculadora Colaborativa Web");
 
-        Console.Write("Digite o primeiro valor: ");
-        double a = double.Parse(Console.ReadLine());
+            Console.Write("Digite o primeiro valor: ");
+            double a = double.Parse(Console.ReadLine());
 
-        Console.Write("Digite o segundo valor: ");
-        double b = double.Parse(Console.ReadLine());
+            Console.Write("Digite o segundo valor: ");
+            double b = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("Selecione uma das funções a seguir:");
-        Console.WriteLine("1 - Adição");
-        Console.WriteLine("2 - Subtração");
-        Console.WriteLine("3 - Multiplicação");
-        Console.WriteLine("4 - Divisão");
+            Console.WriteLine("Selecione uma das funções a seguir:");
+            Console.WriteLine("1 - Adição");
+            Console.WriteLine("2 - Subtração");
+            Console.WriteLine("3 - Multiplicação");
+            Console.WriteLine("4 - Divisão");
+            Console.WriteLine("5 - Potenciação");
 
-        Console.Write("Opção: ");
-        int opcao = int.Parse(Console.ReadLine());
+            Console.Write("Opção: ");
+            int opcao = int.Parse(Console.ReadLine());
 
-        double resultado;
-        switch(opcao)
-        {
-            case 1:
-            Adicao(a, b);
-            break;
-            case 2:
-            Subtracao(a, b);
-            case 3:
-            Multiplicacao(a, b);
-            case 4:
-            Divisao(a, b);
-            case 5:
-            Potencia(a, b);
+            switch (opcao)
+            {
+                case 1:
+                    Console.WriteLine("Resultado: " + Adicao(a, b));
+                    break;
+                case 2:
+                    Console.WriteLine("Resultado: " + Subtracao(a, b));
+                    break;
+                case 3:
+                    Console.WriteLine("Resultado: " + Multiplicacao(a, b));
+                    break;
+                case 4:
+                    if (b == 0)
+                        Console.WriteLine("Erro: divisão por zero!");
+                    else
+                        Console.WriteLine("Resultado: " + Divisao(a, b));
+                    break;
+                case 5:
+                    Console.WriteLine("Resultado: " + Potencia(a, b));
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida!");
+                    break;
+            }
         }
 
         // Adição
@@ -47,32 +56,28 @@ namespace CalculadoraWeb
             return a + b;
         }
 
-        // Integrante 2
-        public static double Subtracao(doublea, double b)
+        // Subtração
+        public static double Subtracao(double a, double b)
         {
             return a - b;
         }
-        // Integrante 3
+
+        // Multiplicação
         public static double Multiplicacao(double a, double b)
         {
-         Console.WriteLine(a *  b);
+            return a * b;
         }
 
-        // Integrante 4
+        // Divisão
         public static double Divisao(double a, double b)
         {
-            Console.WriteLine(a / b)
+            return a / b;
         }
 
+        // Potenciação
         public static double Potencia(double a, double b)
         {
-            return Math.Pow(a,b);
+            return Math.Pow(a, b);
         }
     }
 }
-
-
-
-
-
-
