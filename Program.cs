@@ -31,6 +31,14 @@ namespace CalculadoraWeb
             case 1:
             Adicao(a, b);
             break;
+            case 2:
+            Subtracao(a, b);
+            case 3:
+            Multiplicacao(a, b);
+            case 4:
+            Divisao(a, b);
+            case 5:
+            Potencia(a, b);
         }
 
         // Adição
@@ -40,7 +48,7 @@ namespace CalculadoraWeb
         }
 
         // Integrante 2
-        public static double Subtração(doublea, double b)
+        public static double Subtracao(doublea, double b)
         {
             return a - b;
         }
@@ -62,6 +70,7 @@ namespace CalculadoraWeb
         }
     }
 }
+
 
 
 
