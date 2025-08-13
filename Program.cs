@@ -51,7 +51,7 @@ namespace CalculadoraWeb
         // Integrante 3
         // public static double Multiplicacao(double a, double b)
         // {
-        //     
+        //  Console.WriteLine(a *  b);
         // }
 
         // Integrante 4
