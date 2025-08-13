@@ -52,10 +52,10 @@ namespace CalculadoraWeb
         // }
 
         // Integrante 4
-        // public static double Divisao(double a, double b)
-        // {
-        //     Console.WriteLine(a / b)
-        // }
+        public static double Divisao(double a, double b)
+        {
+            Console.WriteLine(a / b)
+        }
 
         public static double Potencia(double a, double b)
         {
@@ -63,5 +63,6 @@ namespace CalculadoraWeb
         }
     }
 }
+
 
 
