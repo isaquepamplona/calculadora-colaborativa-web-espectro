@@ -40,19 +40,15 @@ namespace CalculadoraWeb
         }
 
         // Integrante 2
-        // public static double Subtracao(double a, double b)
-        // {
-        //     // Implementar aqui
-        // }
         public static double Subtração(doublea, double b)
         {
             return a - b;
         }
         // Integrante 3
-        // public static double Multiplicacao(double a, double b)
-        // {
-        //  Console.WriteLine(a *  b);
-        // }
+        public static double Multiplicacao(double a, double b)
+        {
+         Console.WriteLine(a *  b);
+        }
 
         // Integrante 4
         public static double Divisao(double a, double b)
@@ -66,6 +62,7 @@ namespace CalculadoraWeb
         }
     }
 }
+
 
 
 
