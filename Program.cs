@@ -44,7 +44,10 @@ namespace CalculadoraWeb
         // {
         //     // Implementar aqui
         // }
-
+        public static double Subtração(doublea, double b)
+        {
+            return a - b;
+        }
         // Integrante 3
         // public static double Multiplicacao(double a, double b)
         // {
@@ -63,6 +66,7 @@ namespace CalculadoraWeb
         }
     }
 }
+
 
 
 
